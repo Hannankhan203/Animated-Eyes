@@ -40,6 +40,7 @@ body {
     border: 2px solid #444;
     box-shadow: 0 15px 15px rgbs(0,0,0,0.2);
     background: radial-gradient(circle, #fff, #e0e0e0);
+    transition: height 0.3s ease-in-out;
 }
 
 .box .eye:hover {
@@ -120,3 +121,6 @@ body {
     }
 }
 
+.eye.close {
+    height: 0px;
+}
