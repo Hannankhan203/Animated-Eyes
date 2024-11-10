@@ -80,3 +80,38 @@ body {
     border: 10px solid #2196f3;
     animation: blinking 5s infinite ease-in-out;
 }
+
+@media screen and (max-width: 576px) {
+    .box .eye {
+        width: 100px;
+        height: 100px;
+    }
+
+    .box .eye::before {
+        width: 35px;
+        height: 35px;
+    }
+
+    @keyframes blinking {
+        0% {
+            width: 35px;
+            height: 35px;
+        }
+        25% {
+            width: 15px;
+            height: 0px;
+        }
+        50% {
+            width: 35px;
+            height: 35px;
+        }
+        75% {
+            width: 15px;
+            height: 0px;
+        }
+        100% {
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
