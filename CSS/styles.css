@@ -9,7 +9,15 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: radial-gradient(#f2761e, #ef4921);
+    background: linear-gradient(120deg, #f2761e, #ef2b21, #f138d6);
+    background-size: 300% 300%;
+    animation: backgroundAnimation 2s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .box {
@@ -29,6 +37,9 @@ body {
     box-shadow: 0 5px 45px rgba(0,0,0,0.2), 
                 inset 0 0 15px #f2761e, 
                 inset 0 0 25px #f2761e;
+    border: 2px solid #444;
+    box-shadow: 0 15px 15px rgbs(0,0,0,0.2);
+    background: radial-gradient(circle, #fff, #e0e0e0);
 }
 
 @keyframes blinking {
@@ -60,11 +71,12 @@ body {
     top: 50%;
     left: 35px;
     transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
     width: 45px;
     height: 45px;
     border-radius: 50%;
     background: #000;
     box-sizing: border-box;
     border: 10px solid #2196f3;
-    animation: blinking 3s infinite ease-in-out;
+    animation: blinking 5s infinite ease-in-out;
 }
