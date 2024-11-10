@@ -42,6 +42,10 @@ body {
     background: radial-gradient(circle, #fff, #e0e0e0);
 }
 
+.box .eye:hover {
+    background: radial-gradient(circle, #fff, #ff0000);
+}
+
 @keyframes blinking {
     0% {
         width: 45px;
@@ -115,3 +119,4 @@ body {
         }
     }
 }
+
