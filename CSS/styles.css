@@ -31,6 +31,29 @@ body {
                 inset 0 0 25px #f2761e;
 }
 
+@keyframes blinking {
+    0% {
+        width: 45px;
+        height: 45px;
+    }
+    25% {
+        width: 35px;
+        height: 10px;
+    }
+    50% {
+        width: 45px;
+        height: 45px;
+    }
+    75% {
+        width: 35px;
+        height: 10px;
+    }
+    100% {
+        width: 45px;
+        height: 45px;
+    }
+}
+
 .box .eye::before {
     content: '';
     position: absolute;
@@ -43,4 +66,5 @@ body {
     background: #000;
     box-sizing: border-box;
     border: 10px solid #2196f3;
+    animation: blinking 3s infinite ease-in-out;
 }
